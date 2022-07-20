@@ -1,3 +1,6 @@
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -5,13 +8,27 @@ import java.net.http.HttpResponse;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 public class App {
 
-    public static void main(String[] args) throws Exception {
+    public static Properties getProps() {
+        Properties properties = new Properties();
+        try {
+            FileInputStream file = new FileInputStream("src/main/resources/properties/configurations.properties");
+            properties.load(file);
+        } catch (IOException e) {
+            System.out.println("Not found file " + e.getMessage());
+        }
+        return properties;
+    }
 
-        // to do a connection HTTP and get data the top 250 movies from Imdb: https://imdb-api.com/en/API/Top250TVs/k_p037jo73
-        String url = "https://mocki.io/v1/9a7c1ca9-29b4-4eb3-8306-1adb9d159060";
+    public static void main(String[] args) throws Exception {
+        // get URL in configurations.properties
+        Properties properties = getProps();
+
+        // to do a connection HTTP and get data the top 250 movies from Imdb: https://imdb-api.com/en/API/Top250TVs/
+        var url = properties.getProperty("url");
         URI address = URI.create(url);
         var client = HttpClient.newHttpClient();
         var request = HttpRequest.newBuilder(address).GET().build();
