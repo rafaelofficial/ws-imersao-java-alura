@@ -43,8 +43,7 @@ public class App {
         var generator = new StickerGeneratorFactory();
         for (Map<String, String> movie : listOfMovies) {
 
-            String cutUrl = "(._V1_UX128_CR0,3,128,176_AL_.jpg)";
-            String urlImage =  movie.get("image").replaceAll(cutUrl, ".jpg");
+            String urlImage =  movie.get("image").replaceAll("(@+)(.*).jpg$", "$1.jpg");
             String title = movie.get("title");
 
             InputStream inputStream = new URL(urlImage).openStream();
