@@ -33,7 +33,7 @@ or environment variable.
  - Put an image yourself that to do course smiling.
  - Put border outline at text the image.
  - Handle the images returned by the IMDB API for get a larger image and no image thumbnails.
-Options: Get the URL of image and remove the shortcut seen during the classroom or consume the endpoint 
+Options: Get the URL of image and remove the shortcut seen during the class or consume the endpoint 
 of posters of the IMDB API (more working hard), handler the return JSON.
  - Make with that of custom sticker of deal with the IMDB rating.
  - ### Supreme challenger:
