@@ -23,3 +23,18 @@ or environment variable.
  - #### Supreme challenger: 
  Create any ways for give a rating at movie, pulling of any configuration file or
  asking for user enter at terminal.
+ 
+### Classroom 02: Generating stickers for WhatsApp:
+ - [x] Read the documentation of abstract InputStream class.
+ - [x] Centralize the text at sticker.
+ - [x] Make a package at the WhatApp and/or Telegram with yours own stickers.
+ - [x] Create directory of output of images, if not exist.
+ - Put other font like the Comic Sans or the Impact, the font used in memes.
+ - Put an image yourself that to do course smiling.
+ - Put border outline at text the image.
+ - Handle the images returned by the IMDB API for get a larger image and no image thumbnails.
+Opções: Get the URL of image and remove the shortcut during the classroom or consume the endpoint 
+of posters of the IMDB API (more working hard), handler the return JSON.
+ - Make with that of custom sticker of deal with the IMDB rating.
+ - ### Supreme challenger:
+ - Use any library of the image manipulation with OpenCV for extract main image and get around it.

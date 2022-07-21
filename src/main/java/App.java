@@ -2,10 +2,10 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
+import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -38,11 +38,20 @@ public class App {
         // extract only the data then interesting (title, poster, rating);
         var parser = new JsonParser();
         List<Map<String, String>> listOfMovies = parser.parse(body);
-        
+
         // show and manipulated the data;
+        var generator = new StickerGeneratorFactory();
         for (Map<String, String> movie : listOfMovies) {
-            System.out.println("\u001b[33mTitle:\033[m " + movie.get("title"));
-            System.out.println("\u001b[33mPoster:\033[m  " + movie.get("image"));
+
+            String urlImage =  movie.get("image");
+            String title = movie.get("title");
+
+            InputStream inputStream = new URL(urlImage).openStream();
+            String fileName = "src/main/resources/output/" + title + ".png";
+
+            generator.create(inputStream, fileName);
+
+            System.out.println("\u001b[33mTitle:\033[m " + title);
             System.out.println("\u001b[30;1m\u001b[43;1m Rating: " + movie.get("imDbRating") + " \u001b[m");
             System.out.println();
         }
