@@ -1,59 +1,47 @@
-import java.io.FileInputStream;
-import java.io.IOException;
+import domain.controllers.ContentExtractorOfNasaController;
+import domain.controllers.StickerGeneratorFactoryController;
+import domain.entities.Content;
+import domain.interfaces.ContentExtractorI;
+import domain.services.ClientHttp;
+
 import java.io.InputStream;
-import java.net.URI;
 import java.net.URL;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 import java.util.List;
-import java.util.Map;
-import java.util.Properties;
+
+import static domain.utils.Configuration.getProps;
 
 public class App {
 
-    public static Properties getProps() {
-        Properties properties = new Properties();
-        try {
-            FileInputStream file = new FileInputStream("src/main/resources/properties/configurations.properties");
-            properties.load(file);
-        } catch (IOException e) {
-            System.out.println("Not found file " + e.getMessage());
-        }
-        return properties;
-    }
-
     public static void main(String[] args) throws Exception {
-        // get URL in configurations.properties
-        Properties properties = getProps();
 
-        // to do a connection HTTP and get data the top 250 movies from Imdb: https://imdb-api.com/en/API/Top250TVs/
-        var url = properties.getProperty("url");
-        URI address = URI.create(url);
-        var client = HttpClient.newHttpClient();
-        var request = HttpRequest.newBuilder(address).GET().build();
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        String body = response.body();
+        // to do a connection HTTP and get data the API
+        var properties = getProps();
 
-        // extract only the data then interesting (title, poster, rating);
-        var parser = new JsonParser();
-        List<Map<String, String>> listOfMovies = parser.parse(body);
+        // get URL in config.properties
+        //var url = properties.getProperty("mock_imdb_api");
+        //ContentExtractorI extractor = new ContentExtractorOfIMDBController();
+
+        var url = properties.getProperty("nasa_key_api");
+        ContentExtractorI extractor = new ContentExtractorOfNasaController();
+
+        // ClientHttp instance
+        var http = new ClientHttp();
+        String json = http.getData(url);
 
         // show and manipulated the data;
-        var generator = new StickerGeneratorFactory();
-        for (int i = 0; i < 10; i++) {
+        List<Content> contents = extractor.contentsExtract(json);
 
-            Map<String, String> movie = listOfMovies.get(i);
+        var generator = new StickerGeneratorFactoryController();
+        for (int i = 0; i < 4; i++) {
 
-            String urlImage =  movie.get("image").replaceAll("(@+)(.*).jpg$", "$1.jpg");
-            String title = movie.get("title");
+            Content content = contents.get(i);
 
-            InputStream inputStream = new URL(urlImage).openStream();
-            String fileName = "src/main/resources/output/" + title + ".png";
+            InputStream inputStream = new URL(content.getUrlImage()).openStream();
+            String fileName = "src/main/resources/output/" + content.getTitle() + ".png";
 
             generator.create(inputStream, fileName);
 
-            System.out.println("\u001b[33mTitle:\033[m " + title);
+            System.out.println("\u001b[33mTitle:\033[m " + content.getTitle());
             System.out.println();
         }
     }
