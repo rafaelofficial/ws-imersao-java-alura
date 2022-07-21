@@ -41,7 +41,9 @@ public class App {
 
         // show and manipulated the data;
         var generator = new StickerGeneratorFactory();
-        for (Map<String, String> movie : listOfMovies) {
+        for (int i = 0; i < 10; i++) {
+
+            Map<String, String> movie = listOfMovies.get(i);
 
             String urlImage =  movie.get("image").replaceAll("(@+)(.*).jpg$", "$1.jpg");
             String title = movie.get("title");
