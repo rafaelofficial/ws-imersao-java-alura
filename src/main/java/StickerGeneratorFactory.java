@@ -35,9 +35,4 @@ public class StickerGeneratorFactory {
         ImageIO.write(newImage, "png", new File(fileName));
         // "src/main/resources/output/sticker.jpg"
     }
-
-//    public static void main(String[] args) throws Exception {
-//        StickerGeneratorFactory generatorFactory = new StickerGeneratorFactory();
-//        generatorFactory.create();
-//    }
 }

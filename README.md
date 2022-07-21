@@ -32,7 +32,7 @@ or environment variable.
  - Put other font like the Comic Sans or the Impact, the font used in memes.
  - Put an image yourself that to do course smiling.
  - Put border outline at text the image.
- - Handle the images returned by the IMDB API for get a larger image and no image thumbnails.
+ - [x] Handle the images returned by the IMDB API for get a larger image and no image thumbnails.
 Opções: Get the URL of image and remove the shortcut during the classroom or consume the endpoint 
 of posters of the IMDB API (more working hard), handler the return JSON.
  - Make with that of custom sticker of deal with the IMDB rating.

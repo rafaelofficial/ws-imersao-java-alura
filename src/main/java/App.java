@@ -43,7 +43,8 @@ public class App {
         var generator = new StickerGeneratorFactory();
         for (Map<String, String> movie : listOfMovies) {
 
-            String urlImage =  movie.get("image");
+            String cutUrl = "(._V1_UX128_CR0,3,128,176_AL_.jpg)";
+            String urlImage =  movie.get("image").replaceAll(cutUrl, ".jpg");
             String title = movie.get("title");
 
             InputStream inputStream = new URL(urlImage).openStream();
@@ -52,7 +53,6 @@ public class App {
             generator.create(inputStream, fileName);
 
             System.out.println("\u001b[33mTitle:\033[m " + title);
-            System.out.println("\u001b[30;1m\u001b[43;1m Rating: " + movie.get("imDbRating") + " \u001b[m");
             System.out.println();
         }
     }
