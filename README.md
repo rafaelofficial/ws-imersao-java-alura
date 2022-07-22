@@ -45,7 +45,7 @@ of posters of the IMDB API (more working hard), handler the return JSON.
 ### Challengers this class:
  - Transform the class that the contents in the Record class, available from Java 16.
  - Create yours own exceptions and used at class that implemented the client HTTP.
- - Use resources from Java 8 and after, like Streams and Lambdas, for map a list in the other.
+ - [x] Use resources from Java 8 and after, like Streams and Lambdas, for map a list in the other.
  - Create the Enum class the linked, like configurations, the API URL and the extractor used.
  - ### Supreme challenger:
  - Consume others APIs than contain images, like the Marvel, that is very different.

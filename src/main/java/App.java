@@ -18,8 +18,8 @@ public class App {
         var properties = getProps();
 
         // get URL in config.properties
-        //var url = properties.getProperty("mock_imdb_api");
-        //ContentExtractorI extractor = new ContentExtractorOfIMDBController();
+//        var url = properties.getProperty("mock_imdb_api");
+//        ContentExtractorI extractor = new ContentExtractorOfIMDBController();
 
         var url = properties.getProperty("nasa_key_api");
         ContentExtractorI extractor = new ContentExtractorOfNasaController();
