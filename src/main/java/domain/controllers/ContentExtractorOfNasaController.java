@@ -19,13 +19,13 @@ public class ContentExtractorOfNasaController implements ContentExtractorI {
         List<Content> contents = new ArrayList<>();
 
         // populate the contents list
-        for (Map<String, String> attributes : listOfAttributes) {
+        listOfAttributes.forEach( (attributes) -> {
             String title = attributes.get("title");
             String urlImage = attributes.get("url");
 
             var content = new Content(title, urlImage);
             contents.add(content);
-        }
+        });
 
         return contents;
     }

@@ -5,31 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72b24aab-2563-4ce6-9fa5-f5542d5d335b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/controllers/ContentExtractorOfIMDBController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/controllers/ContentExtractorOfNasaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/entities/Content.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/interfaces/ContentExtractorI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/services/ClientHttp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/domain/utils/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/utils/JsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StickerGeneratorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/controllers/StickerGeneratorFactoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output/12 Angry Men.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output/Pulp Fiction.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output/Schindler's List.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output/The Dark Knight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output/The Godfather" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output/The Godfather.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output/The Good, the Bad and the Ugly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output/The Lord of the Rings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output/The Shawshank Redemption.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output/sticker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/controllers/ContentExtractorOfIMDBController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/controllers/ContentExtractorOfIMDBController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/controllers/ContentExtractorOfNasaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/controllers/ContentExtractorOfNasaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/output/Good Morning Planets from Chile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/output/In the Heart of the Virgo Cluster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/output/Strawberry Supermoon from China.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/output/The Gamma Cygni Nebula.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JsonParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StickerGeneratorFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/StickerGeneratorFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/StickerGeneratorFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/controllers/ContentExtractorOfIMDBController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/controllers/ContentExtractorOfIMDBController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +40,31 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="class03_refactor_oop" />
+                    <option name="lastUsedInstant" value="1658442755" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1658442754" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="2C7vC8pBF7ou508c3U1M5XjnZVW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
