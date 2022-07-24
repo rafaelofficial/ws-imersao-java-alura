@@ -1,3 +1,4 @@
+import domain.controllers.ContentExtractorOfIMDBController;
 import domain.controllers.ContentExtractorOfNasaController;
 import domain.controllers.StickerGeneratorFactoryController;
 import domain.entities.Content;
@@ -19,10 +20,11 @@ public class App {
 
         // get URL in config.properties
 //        var url = properties.getProperty("mock_imdb_api");
-//        ContentExtractorI extractor = new ContentExtractorOfIMDBController();
+        var url = properties.getProperty("language_api");
+        ContentExtractorI extractor = new ContentExtractorOfIMDBController();
 
-        var url = properties.getProperty("nasa_key_api");
-        ContentExtractorI extractor = new ContentExtractorOfNasaController();
+//        var url = properties.getProperty("nasa_key_api");
+//        ContentExtractorI extractor = new ContentExtractorOfNasaController();
 
         // ClientHttp instance
         var http = new ClientHttp();
@@ -32,7 +34,7 @@ public class App {
         List<Content> contents = extractor.contentsExtract(json);
 
         var generator = new StickerGeneratorFactoryController();
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 2; i++) {
 
             Content content = contents.get(i);
 

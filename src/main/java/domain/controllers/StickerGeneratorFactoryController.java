@@ -22,15 +22,14 @@ public class StickerGeneratorFactoryController {
         // copy the image original for new image (in memory)
         Graphics2D graphics = (Graphics2D) newImage.getGraphics();
         graphics.drawImage(imageOriginal, 0, 0, null);
-        // int centralizeString = graphics.getFontMetrics().stringWidth("TOPZERA");
 
         // configuration font
-        var font = new Font(Font.SANS_SERIF, Font.BOLD, 45);
+        var font = new Font(Font.SANS_SERIF, Font.BOLD, 42);
         graphics.setColor(Color.GRAY);
         graphics.setFont(font);
 
         // write new phase at the new image
-        graphics.drawString("TOPZERA", 75, newHeight - 100);
+        graphics.drawString("Hello, World", 350, newHeight - 100);
 
         // write the new image in a file
         ImageIO.write(newImage, "png", new File(fileName));

@@ -1,4 +1,4 @@
-# Java Immersion - ALURA
+# Imersão Java Alura
  These Immersion will deep the Java ecosystem in subjects like:
  - API
  - Services and Micros Services
@@ -9,6 +9,9 @@
  - etc.
 
 ## Class 01: Consuming an API of movies with Java:
+ This first class, we will build an application of zero for consume the IMDB API and show
+the movies more populates, highlighting your poster and viewing your ranking...
+All this without any external library.
 ### Challengers this class:
 
  - [x] Consume the endpoint of must popular movies from IMDB API. Find as well, 
@@ -25,6 +28,8 @@ or environment variable.
  asking for user enter at terminal.
  
 ### Class 02: Generating stickers for WhatsApp:
+ This second class we will create a sticker generator exploring others  native   library from Java
+for send by WhatsApp our favorite movies.
 ### Challengers this class:
  - [x] Read the documentation of abstract InputStream class.
  - [x] Centralize the text at sticker.
@@ -42,6 +47,8 @@ of posters of the IMDB API (more working hard), handler the return JSON.
  - ### Supreme challenger:
  - Use any library of the image manipulation with OpenCV for extract main image and get around it.
 ## Class 03: Spikes Calling, Refactoring and Object Orientation:
+ The time has come of take the movies from IMDB and generate stickers with posters, enjoy for improving
+our code with refactoring required for become more flexible and easy of understand. 
 ### Challengers this class:
  - Transform the class that the contents in the Record class, available from Java 16.
  - Create yours own exceptions and used at class that implemented the client HTTP.
@@ -50,3 +57,16 @@ of posters of the IMDB API (more working hard), handler the return JSON.
  - ### Supreme challenger:
  - Consume others APIs than contain images, like the Marvel, that is very different.
  - Repository with Public APIs: [click here](https://github.com/public-apis/public-apis).
+## Class 03: Creating our own API with Spring:
+ Now we will build a REST API for show our own contents, using professionals tools like 
+Spring Framework and a NoSQL database.
+### Challenges this class:
+ - Final the CRUD (Create, Reade, Update and Delete) for what can update and delete a language register.
+ - Give back the sorted list by ranking.
+ - Create at your API an entity model with different names of title and image and create
+your own extractor of custom information OR, keep with the name and title and translate for what going been returned
+like title and image through of use from DTO (Data Transfer Object).
+ - Return the status 201 when a resource (language, this case) it is registered through from POST.
+ - ### Supreme challenger:
+ - Apply partial changes at resources through of method PATCH, for example, changing the number of votes or peoples
+that use each programing language.

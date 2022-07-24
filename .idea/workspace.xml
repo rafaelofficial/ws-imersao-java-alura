@@ -6,16 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="72b24aab-2563-4ce6-9fa5-f5542d5d335b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/controllers/ContentExtractorOfIMDBController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/controllers/ContentExtractorOfIMDBController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/controllers/ContentExtractorOfNasaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/controllers/ContentExtractorOfNasaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/controllers/StickerGeneratorFactoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/controllers/StickerGeneratorFactoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/output/Good Morning Planets from Chile.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/output/In the Heart of the Virgo Cluster.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/output/Strawberry Supermoon from China.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/output/The Dark Knight.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/output/The Gamma Cygni Nebula.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/output/The Godfather" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/output/The Godfather.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/output/The Shawshank Redemption.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/StickerGeneratorFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/domain/controllers/ContentExtractorOfIMDBController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/controllers/ContentExtractorOfIMDBController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/controllers/ContentExtractorOfNasaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/controllers/ContentExtractorOfNasaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/domain/controllers/StickerGeneratorFactoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/domain/controllers/StickerGeneratorFactoryController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -50,12 +54,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="class03_refactor_oop" />
-                    <option name="lastUsedInstant" value="1658442755" />
+                    <option name="branchName" value="class04_spring" />
+                    <option name="lastUsedInstant" value="1658504042" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1658442754" />
+                    <option name="lastUsedInstant" value="1658503846" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="class03_refactor_oop" />
+                    <option name="lastUsedInstant" value="1658442755" />
                   </RecentBranch>
                 </list>
               </option>
@@ -75,7 +83,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -134,5 +142,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
